@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta content="text/html" charset="UTF-8" http-equiv="content-type"/>
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Text01</title>
+  <link rel='stylesheet' href='text01.css'/>
+ 
+ </head>
+ <body>
+	<div class="bg-div">
+		<div class="na">
+			<ul>
+				 <li><a href="http://www.w3school.com.cn/h.asp" target="_blank">W3c教程</a></li>
+				 <li><a href="http://www.hcharts.cn/" target="_blank">Highcharts</a></li>
+				 <li><a href="http://echarts.baidu.com/index.html" target="_blank">Echarts</a></li>
+				 <li><a href="http://www.imooc.com/course/list" target="_blank">慕课网</a></li>
+				 <li><a href="http://www.cnblogs.com/" target="_blank">博客园</a></li>
+			</ul>
+		</div>
+		<div class="search-box">
+			<div class="logo"></div> 
+			<form class="search-form" action="https://cn.bing.com/search" target="_blank"  id="search-form">
+				<input type="text" class="search-text" name="q"  id="search_input" autocomplete="off"/>
+				<input type="submit" class="search-button" value=""/>
+			</form>
+		</div>
+		
+	   
+
+		<div class="page-nomal">
+			<span class="page-prev">上一页</span>
+			<span class="page-current">1</span>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">7</a>
+			...
+			<a href="#">198</a>
+			<a href="#">199</a>
+			<a href="#">200</a>
+			<a href="#">下一页</a>
+		</div>
+		<div class="back">
+			<a href="javascript:;" id="btn"></a>
+		</div>
+		<div id="subject" class="wrapper">
+			<ul>
+				<li class="big">
+					<a href="http://acm.hdu.edu.cn/" target="_blank">
+						<img src="01.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">杭电ACM</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.w3school.com.cn/h.asp" target="_blank">
+						<img src="02.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">W3c</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.hcharts.cn/" target="_blank">
+						<img src="03.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">Highcharts</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://echarts.baidu.com/index.html" target="_blank">
+						<img src="04.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">Echarts</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.imooc.com/course/list" target="_blank">
+						<img src="05.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+						    <p class="ziti">慕课网</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.cnblogs.com/" target="_blank">
+						<img src="06.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">博客园</p>
+						</div>
+						<i class="line"></i>
+						<i class="mask"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://poj.org/" target="_blank">
+						<img src="07.png">
+						<div class="info">
+							<h3 style="color:#4169E1">点我进入<h3>
+							<p class="ziti">北大ACM</p>
+						</div>
+						<i class="mask"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="suggest" id="search-suggest" style="display:none" >
+			<ul id="search-result">
+				<li>搜索结果1</li>
+				<li>搜索结果2</li>
+			</ul>
+   </div>
+   <div class="type">
+		<dl id="type">
+		<dt>网站类型：</dt>
+		<dd class="selected" onclick="show(0)"><a href="#"><b></b>全部</a></dd>
+		<dd><a href="#" onclick="show(1)"><b></b>学习</a></dd>
+		<dd><a href="#" onclick="show(2)"><b></b>娱乐</a></dd>
+		</dl>
+   </div>
+   <div class="typeList">
+		<form action="#" method="post" name="typeList">
+			<ul id="checkList">
+				<li class="selected"><input type="checkbox" name="typeList" id="one"/><label for="one" >选择1</li>
+				<li><input type="checkbox" name="typeList" id="two"/><label for="two" >选择2</li>
+				<li><input type="checkbox" name="typeList" id="three"/><label for="three" >选择3</li>
+				<li><input type="checkbox" name="typeList" id="four"/><label for="four" >选择4</li>
+				<li><input type="checkbox" name="typeList" id="five"/><label for="five" >选择5</li>
+			</ul>
+		</form>
+   </div>
+
+   <div class="contact">
+		<form action="#" method="post" name="cForm">
+			<ul>
+				<li>
+					<label>用户名：</label>
+					<input type="text" name="yourname" placeholder="请输入用户名" required/>
+				</li>
+				<li>
+					<label>密码：</label>
+					<input type="text" name="password" placeholder="请输入密码" required/>
+				</li>
+				<li>
+					<input type="submit" class="sub" value="登录"/>
+				</li>
+			</ul>
+		</form>
+   </div>
+	
+   <div id="box">
+		<div class="province">
+			<strong>送货至：</strong>
+			<span id="selectedprovince">北京</span>
+				<ul id="allprovince" >
+					<li><span>北京</span></li>
+					<li><span>上海</span></li>
+					<li><span>天津</span></li>
+					<li><span>重庆</span></li>
+					<li><span>河北</span></li>
+					<li><span>山西</span></li>
+					<li><span>河南</span></li>
+					<li><span>辽宁</span></li>
+					<li><span>吉林</span></li>
+					<li><span>黑龙江</span></li>
+					<li><span>内蒙古</span></li>
+					<li><span>江苏</span></li>
+					<li><span>山东</span></li>
+					<li><span>安徽</span></li>
+					<li><span>浙江</span></li>
+					<li><span>福建</span></li>
+					<li><span>湖北</span></li>
+					<li><span>湖南</span></li>
+					<li><span>广东</span></li>
+					<li><span>广西</span></li>
+					<li><span>江西</span></li>
+					<li><span>四川</span></li>
+					<li><span>海南</span></li>
+					<li><span>贵州</span></li>
+					<li><span>云南</span></li>
+					<li><span>西藏</span></li>
+					<li><span>陕西</span></li>
+					<li><span>甘肃</span></li>
+					<li><span>青海</span></li>
+					<li><span>宁夏</span></li>
+					<li><span>新疆</span></li>
+					<li><span>台湾</span></li>
+					<li><span>香港</span></li>
+					<li><span>澳门</span></li>
+					<li><span>钓鱼岛</span></li>
+					<li><span>海外</span></li>
+				</ul>
+		
+   </div>
+  <div id="layer"></div>
+	<script type="text/javascript" src="text01.js"></script>
+	<script type="text/javascript" src="text02.js"></script>
+	<script type="text/javascript" src="text03.js"></script>
+	<script type="text/javascript" src="text04.js"></script>
+	<script type="text/javascript" src="text05.js"></script>
+ </body>
+</html>

@@ -1,0 +1,38 @@
+//实现手风琴效果
+//封装函数
+function bind(el,eventType, callback){
+    if(typeof el.addEventListener === "function"){
+           el.addEventListener(eventType, callback,false);
+        }else if(typeof el.attachEvent === "function"){
+           el.attachEvent("on" + eventType,callback);
+            }
+    }
+     
+function mouseoverHandler(e){
+    var target = e.target || e.srcElement;
+    var outer = document.getElementById("subject");
+    var list = outer.getElementsByTagName("li");
+     
+    for(var i = 0; i < list.length; i++){
+        list[i].className = "";
+        }
+     
+       while(target.tagName != "LI" || target.tagName == "BODY"){
+             target = target.parentNode;
+           } 
+       target.className = "big";
+     
+    }
+ 
+ //调用封装函数
+function initList(){
+    var outer = document.getElementById("subject");
+    var list = outer.getElementsByTagName("li");
+    for(var i=0; i < list.length; i++){
+         bind(list[i],"mouseover", mouseoverHandler);
+       }
+    }
+     
+initList();
+
+

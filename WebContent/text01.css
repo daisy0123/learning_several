@@ -1,0 +1,81 @@
+*{margin:0;padding:0;font-size:14px;} body,ul,li,p,h3{margin:0; padding:0;}ul{list-style:none;}
+ 
+ body{background-color:#333;font:16px/32px "幼圆"}
+ .bg-div{background-image:url(bg6.jpg);height:2400px;width:1300px;margin:0 auto;position:relative;}
+
+ .logo{ background-image:url(logo.png);width:120px;height:55px;float:left; }
+ .search-box form{background-color:white;height:30px;width:300px;float:left;margin:10px 0 0 0;position:absolute;left:120px }
+ .search-text{border:0;position:absolute;top:0;bottom:0;float:left;font-size:20px;font-family:幼圆;outline:none;line-height:25px;}
+ .search-button{border:0;background-image:url(logo011.png);width:26px;height:27px;position:absolute;top:2px;bottom:0;left:270px;float:left;}
+.search-box{position:absolute;top:8px;left:880px;}
+.suggest{width:300px;background-color:#fff;border:1px solid #999;}
+.suggest ul li{padding:3px;font-family:幼圆;font-size:14px;line-height:25px;cursor:pointer;}
+.suggest ul li:hover{text-decoration:underline;background-color:#e5e5e5;}
+
+.na ul{list-style:none;height:50px;border-bottom:5px solid #66CCFF;}
+.na li{float:left;margin-top:20px;}
+.na a{text-decoration:none;display:block;height:30px;line-height:30px;width:120px;background-color:#99CCCC;text-indent:10px;color:blue;text-align:center;}
+.na a:hover{color:white;background-color:#66CCFF;}
+
+.page-nomal{color:#3399CC;font-size:0;text-align:center;font-size:15px; position:absolute;bottom:60px;left:350px;}
+.page-nomal a{color:#3399CC;border:1px solid  #3399CC;padding:5px 7px;text-decoration:none;font-size:15px;}
+.page-nomal a:hover{color:#0000CC;border:1px solid #3399FF;background:#3399FF;padding:5px 7px;font-size:15px;}
+.page-nomal .page-prev{color:#99CCFF;border:1px solid #99CCFF;padding:5px 7px;font-size:15px;}
+.page-nomal .page-current{color:#0000CC;border:1px solid #3399FF;background:#3399FF;padding:5px 7px;font-size:15px;}
+#btn{display:none;position:fixed;bottom:50px;right:12px;background-image:url(back-to-top.01.png);width:50px;height:97px;}
+#btn:hover{position:fixed;bottom:50px;right:12px;background-image:url(back-to-top.02.png);width:56px;height:136px;}
+
+.wrapper{width:1200px;height:90px;border:1px solid #C0C0C0;position:absolute; top:350px;left:0px;} 
+.wrapper li{width:150px;height:90px;float:left;overflow:hidden;}
+.wrapper li a{float:left;width:150px;height:90px;position:absolute;text-decoration:none;overflow:hidden;}
+.wrapper img{position:absolute;right:-15px;bottom:0;width:80px;height:80px;}
+.wrapper .line{position:absolute;top:0;right:0;width:0;height:90px;border:1px dashed #cacaca;}
+.wrapper .info{position:absolute;top:0;left:0;}
+.wrapper li h3{font-size:15px;}
+.wrapper li p.ziti{font-family:幼圆;font-size:20px;font-weight:10;color:#A52A2A;}
+.wrapper .mask{position:absolute;top:0;left:0;height:90px;width:150px;opacity:0;background:#000;}
+.wrapper:hover .mask{opacity:0.15}
+.wrapper ul *{transition:all linear 0.1s;}
+.wrapper li.big,li.big a{width:300px;}
+.wrapper li.big img{width:100px;height:100px;right:0;bottom:0;}
+.wrapper li.big .info{width:200px;}
+.wrapper li.big  h3{font-size:24px;}
+.wrapper li.big  p.ziti{font-family:幼圆;font-size:28px;}
+.wrapper li.big  a:hover .mask{opacity:0;}
+
+.type{width:300px;height:32px;border:1px solid #DFDFDF;position:absolute;top:60px;left:5px;}
+.type dl {display:block;font:12px/22px "微软雅黑";height:32px;line-height:32px;}
+.type dt{float:left;padding-left:15px;}
+.type dd{float:left;margin:0 10px 0 8px;}
+.type a{display:block;position:relative;color:#000000;text-decoration:none;padding-left:23px;}
+.type dd a:hover{color:red;text-decoration:underline;}
+.type dd b{width:15px;height:15px;background-image:url(btn2.png);display:block;position:absolute;top:9px;left:0px;}
+.type dd a:hover b{width:15px;height:15px;background-image:url(btn4.png);display:block;position:absolute;top:9px;left:0px;}
+.type .selected b,.type .selected a:hover b{width:15px;height:15px;background-image:url(btn3.png);display:block;position:absolute;top:9px;left:0px;}
+.typeList {width:350px;height:30px;border:1px solid #DFDFDF;border-width:1px 0;position:absolute;top:100px;left:10px;}
+.typeList ul{height:30px;line-height:30px;padding-left:15px;}
+.typeList ul li{float:left;margin-right:12px;position:relative;}
+.typeList ul li input{display:none;}
+.typeList ul li b{display:block;width:20px;height:15px;background-image:url(fxbtn02.png);position:absolute;top:8px;left:0;}
+.typeList ul li label{padding-left:20px;}
+.typeList ul li:hover b{display:block;width:20px;height:20px;background-image:url(fxbtn03.png);position:absolute;top:5px;left:0;}
+.typeList ul .selected b,.typeList ul .selected:hover b{display:block;width:20px;height:20px;background-image:url(fxbtn06.png);position:absolute;top:5px;left:0;}
+
+.contact *:focus{outline:none;}
+.contact{width:280px;height:auto;background:#F6F6F6;position:absolute;top:80px;right:5px;margin:40px auto;padding:10px;border-radius:8px;}
+.contact ul{width:280px;}
+.contact ul li{border-bottom:1px solid #DFDFDF;padding:5px;}
+.contact ul li label{width:80px;display:inline-block;float:left;padding-top:3px}
+.contact ul li input[type=text]{width:150px;height:15px;border:1px solid #AAAAAA;padding:3px 8px;background:url(star.png) no-repeat 98%;border-radius:5px;transition:padding .25s;
+-o-transition:padding .25s;-moz-transition:padding .25s;-webkit-transition:padding .25s;}
+.contact ul li input[type=text]:focus{border-color:#C00;background:url(alert-red.png) no-repeat 98% 40%;padding-right:30px;}
+.contact ul li .sub{width:50px;margin:0 110px;height:25px;}
+
+#box{position:absolute;top:60px;left:400px;width:350px;height:42px;}
+.province{width:350px;background:red;height:42px;}
+.province strong{display:block;color:white;width:70px;float:left;height:42px;margin-top:5px;}
+.province ul li{float:left;padding-right:20px;width:45px;height:30px;}
+#selectedprovince{color:#CCC;width:200px;height:28px;display:block;background:white url(arrow.png) no-repeat 98%;float:left;margin-top:7px;cursor:pointer}
+#allprovince{width:338px;height:auto;line-height:30px;padding-left:10px;clear:both;position:absolute;top:42px;left:0;background:white;border:1px solid #DFDFDF;cursor:pointer;display:none;z-index:101;};
+#allprovince li span:hover{color:red;}
+#layer{width:100%;height:100%;background:#FFFFFF;position:absolute;top:0;left:0;z-index:100;filter:alpha:(opacity=0);opacity:0;display:none;}
